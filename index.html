@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app" aria-label="Tic Tac Toe">
+    <header class="header">
+      <h1>Tic‑Tac‑Toe</h1>
+      <p class="subtitle">A tiny responsive web game — play vs a friend or the computer.</p>
+    </header>
+
+    <section class="panel" aria-label="Game controls">
+      <div class="status" role="status" aria-live="polite" id="status">Loading…</div>
+
+      <div class="controls">
+        <label class="toggle">
+          <input type="checkbox" id="aiToggle" />
+          <span>Single player (vs AI)</span>
+        </label>
+
+        <button id="restartBtn" class="btn" type="button">Restart</button>
+      </div>
+    </section>
+
+    <section class="boardWrap" aria-label="Game board">
+      <div class="board" id="board" role="grid" aria-label="3 by 3 board">
+        <button class="cell" type="button" role="gridcell" data-i="0" aria-label="Cell 1"></button>
+        <button class="cell" type="button" role="gridcell" data-i="1" aria-label="Cell 2"></button>
+        <button class="cell" type="button" role="gridcell" data-i="2" aria-label="Cell 3"></button>
+        <button class="cell" type="button" role="gridcell" data-i="3" aria-label="Cell 4"></button>
+        <button class="cell" type="button" role="gridcell" data-i="4" aria-label="Cell 5"></button>
+        <button class="cell" type="button" role="gridcell" data-i="5" aria-label="Cell 6"></button>
+        <button class="cell" type="button" role="gridcell" data-i="6" aria-label="Cell 7"></button>
+        <button class="cell" type="button" role="gridcell" data-i="7" aria-label="Cell 8"></button>
+        <button class="cell" type="button" role="gridcell" data-i="8" aria-label="Cell 9"></button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <a href="https://github.com/ezoushen/tic-tac-toe" target="_blank" rel="noreferrer">GitHub</a>
+    </footer>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
